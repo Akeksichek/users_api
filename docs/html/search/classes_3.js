@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['imodel_0',['IModel',['../classIModel.html',1,'']]]
+  ['modelfactory_0',['ModelFactory',['../classModelFactory.html',1,'']]]
 ];

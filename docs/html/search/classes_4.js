@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['modelfactory_0',['ModelFactory',['../classModelFactory.html',1,'']]]
+  ['routehandler_0',['RouteHandler',['../structRouteHandler.html',1,'']]],
+  ['router_1',['Router',['../classRouter.html',1,'']]]
 ];

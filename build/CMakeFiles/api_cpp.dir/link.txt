@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/api_cpp.dir/main.cpp.o CMakeFiles/api_cpp.dir/app/Server/server.cpp.o CMakeFiles/api_cpp.dir/app/Controllers/UsersCtrl.cpp.o CMakeFiles/api_cpp.dir/app/DataBase/DataBase.cpp.o CMakeFiles/api_cpp.dir/app/DataBase/Models/User.cpp.o -o api_cpp  -ljsoncpp -lmysqlcppconn 

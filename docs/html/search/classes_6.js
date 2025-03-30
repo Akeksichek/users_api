@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['server_0',['Server',['../classServer.html',1,'']]]
+  ['user_0',['User',['../classUser.html',1,'']]],
+  ['usersctrl_1',['UsersCtrl',['../classUsersCtrl.html',1,'']]]
 ];

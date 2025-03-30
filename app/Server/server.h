@@ -1,11 +1,15 @@
 #pragma once 
 
 #include <iostream>
+#include <thread>
+#include <chrono>
 #include <atomic>
+#include <vector>
 
 #include <boost/system/error_code.hpp>
 #include <boost/asio/ip/tcp.hpp>
 #include <boost/asio/io_context.hpp>
+#include <boost/asio/buffers_iterator.hpp>
 
 #include <boost/beast/http/message.hpp>
 #include <boost/beast/http/string_body.hpp>
@@ -28,10 +32,15 @@ private:
     tcp::acceptor acceptor;
     
     std::atomic<bool> finish;
+    std::thread t;
 
 private:
     void connection_handler(tcp::socket&& socket);
-    
+
+    //async work methods
+    void do_accept();
+    http::request<http::string_body> make_request(std::string &raw_request);
+
 public:
     Router router;
     /**
@@ -42,8 +51,8 @@ public:
     * @param addr Адрес, по которому сервер будет принимать запросы (например, "127.0.0.1")
     * @param port Номер порта, на котором сервер будет прослушивать входящие соединения
     */
-    Server(const std::string& addr, int port);
-    ~Server() = default;
+    Server(int port);
+    ~Server();
     /**
     * @brief Запускает сервер
     * 
@@ -58,8 +67,13 @@ public:
     */
     void stop();
 
+    void close_socket(shared_ptr<tcp::socket> socket);
+    /**
+    * @brief Запускает сервер
+    * 
+    * Активирует слушание указанного порта и ожидает входящие соединения в асинхронном режиме.
+    */
     void start_async();
-    void connection_handler_async(tcp::socket&& socket);
 
 
 public:

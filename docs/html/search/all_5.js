@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['modelfactory_0',['ModelFactory',['../classModelFactory.html',1,'']]],
-  ['modelfactory_2eh_1',['ModelFactory.h',['../ModelFactory_8h.html',1,'']]]
+  ['process_5fhandler_0',['process_handler',['../classRouter.html#ac29010d5af3dbd0a195a335266c59619',1,'Router']]]
 ];
