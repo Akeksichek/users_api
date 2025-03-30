@@ -1,3 +1,0 @@
-/home/akeksichek/Рабочий стол/pet_projects/cpp/api_for_auth_reg/build/CMakeFiles/api_cpp.dir
-/home/akeksichek/Рабочий стол/pet_projects/cpp/api_for_auth_reg/build/CMakeFiles/edit_cache.dir
-/home/akeksichek/Рабочий стол/pet_projects/cpp/api_for_auth_reg/build/CMakeFiles/rebuild_cache.dir
